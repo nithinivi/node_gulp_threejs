@@ -5,12 +5,6 @@ Example Threejs application
 ### Version
 1.0.0
 
-##Dependencies
-gulp-imagemin
-gulp-concat
-gulp-uglify
-gulp-sass
-
 ## Install Dependencies
 ```bash
 npm install
