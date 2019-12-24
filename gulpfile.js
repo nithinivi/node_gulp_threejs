@@ -49,15 +49,14 @@ gulp.task('sass', function(){
 // Scripts
 gulp.task('scripts', function(){
     return gulp.src('src/js/*.js')
-        .pipe(concat('main.js'))
-        .pipe(uglify())
+    //        .pipe(concat('main.js'))
         .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('watch', function(){
     browserSync.init({
         server:{
-            baseDir: "./src/"}
+            baseDir: "./dist/"}
     })
 
     gulp.watch('src/sass/*.scss', gulp.series(['sass']));
